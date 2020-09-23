@@ -4,4 +4,11 @@
     background-color: $sidebar-color;
     color: $text-color;
     height: calc(100vh - 2rem);
+
+    display: grid;
+    grid-template-rows: 4rem auto;
+
+    &__header {
+        
+    }
 }
