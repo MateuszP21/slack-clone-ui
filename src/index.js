@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ChatContextProvider} from './components/Context/ChatContext';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ChatContextProvider>
     <App />
+    </ChatContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

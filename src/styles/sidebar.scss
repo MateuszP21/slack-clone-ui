@@ -44,4 +44,36 @@
             text-align: center;
         }
     }
+
+    &__list {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+
+        &:first-child {
+            padding-top: 1rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--title {
+            font-size: .9rem;
+        }
+
+        &--item {
+            font-size: .9rem;
+            padding-right: .8rem;
+            padding-left: .8rem;
+        }
+
+        &--plus {
+            float: right;
+            font-size: 1rem;
+
+            align-self: center;
+            justify-self: center;
+        }
+    }
 }
