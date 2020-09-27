@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
-import {ChatContext} from '../Context/ChatContext';
+import {DispatchChatContext} from '../context/chat-context';
 
 function ListItem({title}) {
-    const [,setChat] = useContext(ChatContext);
+    const setChat = useContext(DispatchChatContext);
     
     console.log('ListItem rerender: ' + title)
     return (

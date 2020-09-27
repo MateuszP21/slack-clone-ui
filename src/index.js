@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {ChatContextProvider} from './components/Context/ChatContext';
+import {ChatContextProvider} from './components/context/chat-context';
 
 ReactDOM.render(
   <React.StrictMode>
