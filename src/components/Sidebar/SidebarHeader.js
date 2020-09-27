@@ -1,10 +1,11 @@
 import React from 'react';
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import {BiMessageSquareEdit} from 'react-icons/bi';
+import {componentDidMountLog} from '../../utils/log';
 
 function SidebarHeader() {
     const title = 'Stacyjkowo';
-    console.log('SidebarJHEader Rerender')
+    componentDidMountLog('SIDEBAR_HEADER');
 
     return (
       <div className="sidebar__header flex__center">

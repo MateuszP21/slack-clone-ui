@@ -46,8 +46,6 @@
     }
 
     &__list {
-        padding-right: 1rem;
-        padding-left: 1rem;
         padding-bottom: 1rem;
 
         &:first-child {
@@ -62,10 +60,17 @@
             font-size: .9rem;
         }
 
+        &--container {
+            padding-left: .5rem;
+        }
+
         &--item {
             font-size: .9rem;
-            padding-right: .8rem;
-            padding-left: .8rem;
+            padding: .1rem 1.2rem;
+
+            &:hover {
+                background-color: $hover-item;
+            }
         }
 
         &--plus {

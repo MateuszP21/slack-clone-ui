@@ -2,11 +2,11 @@ import React from 'react';
 
 function CurrentUser() {
 
-    return (
-      <div className="">
+  return (
+    <div className="">
        
-      </div>
-    );
-  }
+    </div>
+  );
+}
   
-  export default CurrentUser;
+export default CurrentUser;

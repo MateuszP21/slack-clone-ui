@@ -4,7 +4,7 @@ export const ChatContext = createContext();
 export const DispatchChatContext = React.createContext();
 
 export const ChatContextProvider = props => {
-  const [chat, setChat] = useState("");
+  const [chat, setChat] = useState(null);
 
   return (
     <DispatchChatContext.Provider value={setChat}>
