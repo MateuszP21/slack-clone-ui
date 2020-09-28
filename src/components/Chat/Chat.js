@@ -1,6 +1,8 @@
 import React from 'react';
 import ChatHeader from './ChatHeader';
 import {componentDidMountLog} from '../../utils/log';
+import ChatMain from './ChatMain';
+import ChatFooter from './ChatFooter';
 
 function Chat() {
   componentDidMountLog('CHAT');
@@ -8,7 +10,8 @@ function Chat() {
     return (
       <div className="chat">
         <ChatHeader/>
-        Chat
+        <ChatMain/>
+        <ChatFooter/>
       </div>
     );
   }
