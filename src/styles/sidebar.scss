@@ -58,19 +58,11 @@
 
         &--title {
             font-size: .9rem;
+            padding-bottom: .2rem;
         }
 
         &--container {
             padding-left: .5rem;
-        }
-
-        &--item {
-            font-size: .9rem;
-            padding: .1rem 1.2rem;
-
-            &:hover {
-                background-color: $hover-item;
-            }
         }
 
         &--plus {
@@ -79,6 +71,32 @@
 
             align-self: center;
             justify-self: center;
+        }
+    }
+
+    &__listitem {
+        &--input {
+            display: none;
+
+            &:checked + .sidebar__listitem--label {
+                background-color: $active-item;
+                color: white;
+            }
+        }
+
+        &--label {
+            display: block;
+            font-size: .9rem;
+            padding: .2rem 1.2rem;
+
+            overflow: hidden;
+            white-space:nowrap; 
+            text-overflow: ellipsis;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $hover-item;
+            }
         }
     }
 }

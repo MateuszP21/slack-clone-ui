@@ -5,21 +5,21 @@ import { ConversationType } from '../../shared/model/Conversation';
 import {componentDidMountLog} from '../../utils/log';
 
 const starred = [
-  {type: ConversationType.DIRECT_MESSAGE, name: 'MPO'},
-  {type: ConversationType.DIRECT_MESSAGE, name: 'Dżasta'}
+  {id: 1, type: ConversationType.DIRECT_MESSAGE, name: 'MPO'},
+  {id: 2, type: ConversationType.DIRECT_MESSAGE, name: 'Dżasta'}
 ];
 
 const channels = [
-  {type: ConversationType.CHANNEL, name: 'general', description: 'Company-wide announcements and work-based matters'},
-  {type: ConversationType.CHANNEL, name: 'books', description: 'Super books topic'},
-  {type: ConversationType.CHANNEL, name: 'tasks', description: 'Tasks group channel'},
-  {type: ConversationType.CHANNEL, name: 'test', description: ''}
+  {id: 3, type: ConversationType.CHANNEL, name: 'general', description: 'Company-wide announcements and work-based matters'},
+  {id: 4, type: ConversationType.CHANNEL, name: 'books', description: 'Super books topic'},
+  {id: 5, type: ConversationType.CHANNEL, name: 'tasks', description: 'Tasks group channel'},
+  {id: 6, type: ConversationType.CHANNEL, name: 'test channel with very long name', description: ''}
 ];
 
 const dms = [
-  {type: ConversationType.DIRECT_MESSAGE, name: 'MPO'},
-  {type: ConversationType.DIRECT_MESSAGE, name: 'Danv'},
-  {type: ConversationType.DIRECT_MESSAGE, name: 'Dżasta'}
+  {id: 7, type: ConversationType.DIRECT_MESSAGE, name: 'MPO'},
+  {id: 8, type: ConversationType.DIRECT_MESSAGE, name: 'Danv'},
+  {id: 9, type: ConversationType.DIRECT_MESSAGE, name: 'Dżasta'}
 ];
 
 

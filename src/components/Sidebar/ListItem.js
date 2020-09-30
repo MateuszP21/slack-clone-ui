@@ -7,9 +7,10 @@ function ListItem({conversation}) {
     componentDidMountLog(`LIST_ITEM ${conversation.name}`);
 
     return (
-      <div className="sidebar__list--item" onClick={() => setChat(conversation)}>
-        {conversation.name}
-      </div>
+      <>
+        <input className="sidebar__listitem--input" id={`listitem-${conversation.id}`} type="radio" name="listitem--conversation"/>
+        <label className="sidebar__listitem--label" htmlFor={`listitem-${conversation.id}`} onClick={() => setChat(conversation)}>{conversation.name}</label>
+      </>
     );
 }
   
