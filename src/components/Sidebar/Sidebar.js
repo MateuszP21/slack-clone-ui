@@ -3,6 +3,7 @@ import SidebarHeader from './SidebarHeader';
 import List from './List';
 import { ConversationType } from '../../shared/model/Conversation';
 import {componentDidMountLog} from '../../utils/log';
+import SimpleBar from 'simplebar-react';
 
 const starred = [
   {id: 1, type: ConversationType.DIRECT_MESSAGE, name: 'MPO'},
@@ -28,10 +29,12 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <SidebarHeader/>
-        <List key={1} {...{items: starred, title: "Starred"}}/>
-        <List key={2} {...{items: channels, title: "Channels"}}/>
-        <List key={3} {...{items: dms, title: "Direct Messages"}}/>
+        <SidebarHeader/>
+        <SimpleBar style={{height: `calc(100vh - 6.5rem)`}}>
+          <List key={1} {...{items: starred, title: "Starred"}}/>
+          <List key={2} {...{items: channels, title: "Channels"}}/>
+          <List key={3} {...{items: dms, title: "Direct Messages"}}/>      
+        </SimpleBar>
     </div>
   );
 }
