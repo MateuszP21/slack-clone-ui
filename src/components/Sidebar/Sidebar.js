@@ -1,4 +1,5 @@
 import React from 'react';
+import './Sidebar.scss';
 import SidebarHeader from './SidebarHeader';
 import List from './List';
 import { ConversationType } from '../../shared/model/Conversation';

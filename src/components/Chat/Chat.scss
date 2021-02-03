@@ -4,6 +4,7 @@
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 4rem auto 6rem;
+    grid-template-columns: auto min-content;
 
     &__header {
         max-width: 100%;
@@ -19,5 +20,18 @@
             text-overflow: ellipsis;
             width: 80%;
         }
+    }
+
+    &__main {
+        grid-row: 2 / 2;
+    }
+
+    &__footer {
+        grid-row: 3 / 3;
+    }
+
+    &__info {
+        grid-column: 2 / 2;
+        grid-row: 1 / 4;
     }
 }

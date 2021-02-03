@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.scss';
 import CurrentUser from './CurrentUser';
 import Help from './Help';
 import Search from './Search';
