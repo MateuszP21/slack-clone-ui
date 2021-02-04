@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
-import Sidebar from './components/Sidebar/Sidebar';
-import Chat from './components/Chat/Chat';
+import Header from './containers/Header/Header';
+import Sidebar from './containers/Sidebar/Sidebar';
+import Chat from './containers/Chat/Chat';
 import {componentDidMountLog} from './utils/log';
 
 function App() {

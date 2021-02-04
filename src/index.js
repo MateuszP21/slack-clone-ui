@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { ChatContextProvider } from './components/context/chat-context';
-import { AuthContextProvider } from './components/context/auth-context';
+import { ChatContextProvider } from './containers/context/chat-context';
+import { AuthContextProvider } from './containers/context/auth-context';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import PrivateRoute from './containers/PrivateRoute';
-import Login from './containers/Login';
+import PrivateRoute from './containers/Auth/PrivateRoute';
+import Login from './containers/Login/Login';
 
 ReactDOM.render(
   <React.StrictMode>

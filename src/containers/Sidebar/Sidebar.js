@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.scss';
 import SidebarHeader from './SidebarHeader';
-import List from './List';
+import List from './List/List';
 import { ConversationType } from '../../shared/model/Conversation';
 import {componentDidMountLog} from '../../utils/log';
 import SimpleBar from 'simplebar-react';

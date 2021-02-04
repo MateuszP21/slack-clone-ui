@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
-import {DispatchChatContext} from '../context/chat-context';
-import {componentDidMountLog} from '../../utils/log';
+import {DispatchChatContext} from '../../context/chat-context';
+import {componentDidMountLog} from '../../../utils/log';
 
 function ListItem({conversation, checked}) {
     const setChat = useContext(DispatchChatContext);

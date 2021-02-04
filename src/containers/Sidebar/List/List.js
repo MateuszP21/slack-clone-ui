@@ -1,8 +1,8 @@
 import React, {useState, useContext, useMemo} from 'react';
 import {IoMdArrowDropright, IoMdArrowDropdown} from 'react-icons/io';
 import ListItem from './ListItem';
-import {componentDidMountLog} from '../../utils/log';
-import {ChatContext} from '../context/chat-context';
+import {componentDidMountLog} from '../../../utils/log';
+import {ChatContext} from '../../context/chat-context';
 
 function displaySelectChatWhenNoExpand(chat, items) {
   const selectChat = items.find((item) => item.id === chat?.id);

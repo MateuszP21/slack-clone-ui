@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import { DispatchAuthContext } from '../components/context/auth-context';
+import { DispatchAuthContext } from '../context/auth-context';
 
 const Login = () => {
   const setAuth = useContext(DispatchAuthContext);
